@@ -11,7 +11,7 @@ public class CorsConfiguration implements WebMvcConfigurer {
 //    private String ipSecret;
     public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:4200", "http://26.146.130.179:4200")
+                .allowedOrigins("http://localhost:4200", "https://upswing-8bc8b.web.app")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD", "CONNECT", "TRACE", "PATCH")
                 .allowedHeaders("*")
                 .allowCredentials(true)
